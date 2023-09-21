@@ -1,0 +1,25 @@
+<div>
+    <div class="login-box">
+        <p>Login</p>
+        <form [formGroup]="loginForm">
+          <div class="user-box">
+            <input formControlName="email"  name="email" type="text" required>
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input formControlName="password" name="password" type="password" required>
+            <label>Password</label>
+          </div>
+          <button (click)="login()">Submit</button>
+          <!-- <a href="#" (click)="login()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a> -->
+        </form>
+        <p>Don't have an account? <a routerLink="/home" class="a2">Sign up!</a></p>
+      </div>
+</div>
+

@@ -1,0 +1,21 @@
+<body class="bg-dark">
+    <div class="body">
+        <form [formGroup]="postForm">
+           <h1 class="text-white mx-auto">Make a Post</h1>
+         <div class="inp">
+           <label for="title">Title</label>
+           <input formControlName="title"  name="title" type="text">
+         </div>
+         <div class="text">
+            <label for="content">Content</label>
+            <textarea formControlName="content" name="content" id="" cols="30" rows="10"></textarea>
+         </div>
+         <div class="inp">
+            <label for="image">Image</label>
+            <input formControlName="image" onchange="Selectedfile($event)" name="image" type="file">
+         </div> 
+         <button (click)="makepost()" class="btn btn-outline-light">Post</button>
+        </form>
+    </div>
+     
+</body>
